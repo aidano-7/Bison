@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Bison:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Bison_jar</output-path>
+    <root id="archive" name="Bison.jar">
+      <element id="module-output" name="Bison" />
+    </root>
+  </artifact>
+</component>
