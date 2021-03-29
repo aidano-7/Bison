@@ -2,7 +2,7 @@ package com.aidano7.bison;
 
 /**
  * @author Aidan O'Sullivan
- * @date 3/26/2021
+ * @since 3/26/2021
  */
 
 public class Bison {

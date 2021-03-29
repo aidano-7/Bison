@@ -8,14 +8,14 @@ package com.aidano7.bison.algebra;
  * <p>
  *     This class is for the implementation of a complex number.
  *     A complex number is a number with a real and imaginary part.
- *     The unit 𝑖 is defined as the square root of -1.
+ *     The unit i is defined as the square root of -1.
  * </p>
  */
 
 public class ComplexNumber {
 
     /**
-     * The complex number for 𝑖
+     * The complex number for i
      */
 
     public static ComplexNumber i = new ComplexNumber(0,1);
@@ -61,7 +61,7 @@ public class ComplexNumber {
     }
 
     /**
-     * To multiply a complex number by another, the equation ac + ad𝑖 + bc𝑖 + bd𝑖 ^ 2
+     * To multiply a complex number by another, the equation ac + adi + bci + bdi ^ 2
      * is used.
      *
      * In this syntax, a is the first number's real part, b is the first number's complex part,
@@ -88,7 +88,7 @@ public class ComplexNumber {
 
     /**
      * To divide a complex number by another, the real part of the quotient is defined as
-     * (ac + bd) / (a ^ 2 + b ^ 2), and the imaginary part is (ad - cb)𝑖 / (a ^ 2 + b ^ 2).
+     * (ac + bd) / (a ^ 2 + b ^ 2), and the imaginary part is (ad - cb)i / (a ^ 2 + b ^ 2).
      *
      * In this syntax, a is the first number's real part, b is the first number's complex part,
      * c is the second number's real part, and b is the second number's complex part.
@@ -192,7 +192,7 @@ public class ComplexNumber {
     }
 
     /**
-     * Complex numbers are written as a + b𝑖
+     * Complex numbers are written as a + bi
      *
      * @return string the standard form of the complex number
      */

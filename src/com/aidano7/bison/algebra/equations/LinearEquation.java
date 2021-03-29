@@ -2,7 +2,7 @@ package com.aidano7.bison.algebra.equations;
 
 /**
  * @author Aidan O'Sullivan
- * @date 3/26/2021
+ * @since 3/26/2021
  */
 
 public class LinearEquation implements Equation {
