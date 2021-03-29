@@ -57,4 +57,8 @@ public class LinearEquation implements Equation {
             return String.format("y = %fx - %f", slope, -yIntercept);
         }
     }
+
+    public boolean equals(LinearEquation linearEquation) {
+        return slope == linearEquation.getSlope() && yIntercept == linearEquation.getYIntercept();
+    }
 }

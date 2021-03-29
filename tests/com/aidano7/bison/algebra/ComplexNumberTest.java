@@ -6,19 +6,19 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ComplexNumberTest {
 
-    @org.junit.jupiter.api.Test
+    @Test
     void getRealNumber() {
         ComplexNumber complexNumber = new ComplexNumber(1f, 5f);
         assertEquals(complexNumber.getRealNumber(), 1f, 0f);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void getImaginaryNumber() {
         ComplexNumber complexNumber = new ComplexNumber(1f, 5f);
         assertEquals(complexNumber.getImaginaryNumber(), 5f, 0f);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void testToString() {
         ComplexNumber complexNumberPositive = new ComplexNumber(1f, 5f);
         assertEquals(complexNumberPositive.toString(), "1.000000 + 5.000000i");
@@ -27,7 +27,7 @@ class ComplexNumberTest {
         assertEquals(complexNumberNegative.toString(), "1.000000 - 5.000000i");
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void add() {
         ComplexNumber a = new ComplexNumber(2f, 3f);
         ComplexNumber b = new ComplexNumber(1f, 5f);
@@ -39,7 +39,7 @@ class ComplexNumberTest {
         assertTrue(equals);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void subtract() {
         ComplexNumber a = new ComplexNumber(2f, 3f);
         ComplexNumber b = new ComplexNumber(1f, 5f);
