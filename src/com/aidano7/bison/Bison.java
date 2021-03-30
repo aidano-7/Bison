@@ -7,6 +7,8 @@ package com.aidano7.bison;
 
 public class Bison {
 
+    // TODO add more constants
+
     /**
      * PI is a constant that is the ratio of a circle's
      * circumference to its diameter.

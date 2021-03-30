@@ -1,7 +1,9 @@
 package com.aidano7.bison.algebra.equations;
 
-public interface Equation {
-    public float get(float x);
+// TODO add documentation for this class
 
-    public String toString();
+public interface Equation {
+    float get(float x);
+
+    String toString();
 }

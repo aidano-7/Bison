@@ -1,5 +1,7 @@
 package com.aidano7.bison.algebra.equations;
 
+// TODO add documentation for this class
+
 /**
  * @author Aidan O'Sullivan
  * @since 3/26/2021

@@ -51,7 +51,7 @@ class ComplexNumberTest {
         assertTrue(equals);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void multiply() {
         ComplexNumber a = new ComplexNumber(2f, 3f);
         ComplexNumber b = new ComplexNumber(1f, 5f);
@@ -63,7 +63,7 @@ class ComplexNumberTest {
         assertTrue(equals);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void divide() {
         ComplexNumber a = new ComplexNumber(2f, 3f);
         ComplexNumber b = new ComplexNumber(1f, 5f);
@@ -75,7 +75,7 @@ class ComplexNumberTest {
         assertTrue(equals);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void square() {
         ComplexNumber complexNumber = new ComplexNumber(2f, 3f);
 

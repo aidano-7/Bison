@@ -198,4 +198,6 @@ public class RadicalNumber {
     public float approximate() {
         return coefficient * ((float) Math.sqrt(radicand));
     }
+
+    // TODO simplify
 }
