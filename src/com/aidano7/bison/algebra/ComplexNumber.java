@@ -1,7 +1,7 @@
 package com.aidano7.bison.algebra;
 
 /**
- * @author Aidan O'Sullivan
+ * @author aidano-7
  * @since 3/28/21
  * @version v0.1
  *

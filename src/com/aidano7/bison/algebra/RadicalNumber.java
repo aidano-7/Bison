@@ -1,7 +1,7 @@
 package com.aidano7.bison.algebra;
 
 /**
- * @author Aidan O'Sullivan
+ * @author aidano-7
  * @since 3/26/2021
  *
  * <p>
@@ -198,6 +198,4 @@ public class RadicalNumber {
     public float approximate() {
         return coefficient * ((float) Math.sqrt(radicand));
     }
-
-    // TODO simplify
 }
