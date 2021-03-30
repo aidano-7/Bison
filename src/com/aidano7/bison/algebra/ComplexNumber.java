@@ -24,40 +24,40 @@ public class ComplexNumber {
      * To add a complex number to another, simply add the real part,
      * then the imaginary part.
      *
-     * @param a the first number to add
-     * @param b the second number to add
+     * @param complexNumberA the first number to add
+     * @param complexNumberB the second number to add
      *
      * @return c the sum of a and b
      */
 
-    public static ComplexNumber add(ComplexNumber a, ComplexNumber b) {
+    public static ComplexNumber add(ComplexNumber complexNumberA, ComplexNumber complexNumberB) {
 
-        ComplexNumber c = new ComplexNumber(0f, 0f);
+        ComplexNumber complexNumberC = new ComplexNumber(0f, 0f);
 
-        c.realNumber = a.getRealNumber() + b.getRealNumber();
-        c.imaginaryNumber = a.getImaginaryNumber() + b.getImaginaryNumber();
+        complexNumberC.realNumber = complexNumberA.getRealNumber() + complexNumberB.getRealNumber();
+        complexNumberC.imaginaryNumber = complexNumberA.getImaginaryNumber() + complexNumberB.getImaginaryNumber();
 
-        return c;
+        return complexNumberC;
     }
 
     /**
      * To subtract a complex number to another, simply subtract the real part,
      * then the imaginary part.
      *
-     * @param a the first number to subtract
-     * @param b the second number to subtract
+     * @param complexNumberA the first number to subtract
+     * @param complexNumberB the second number to subtract
      *
      * @return c the difference of a and b
      */
 
-    public static ComplexNumber subtract(ComplexNumber a, ComplexNumber b) {
+    public static ComplexNumber subtract(ComplexNumber complexNumberA, ComplexNumber complexNumberB) {
 
-        ComplexNumber c = new ComplexNumber(0f, 0f);
+        ComplexNumber complexNumberC = new ComplexNumber(0f, 0f);
 
-        c.realNumber = a.getRealNumber() - b.getRealNumber();
-        c.imaginaryNumber = a.getImaginaryNumber() - b.getImaginaryNumber();
+        complexNumberC.realNumber = complexNumberA.getRealNumber() - complexNumberB.getRealNumber();
+        complexNumberC.imaginaryNumber = complexNumberA.getImaginaryNumber() - complexNumberB.getImaginaryNumber();
 
-        return c;
+        return complexNumberC;
     }
 
     /**
@@ -152,7 +152,7 @@ public class ComplexNumber {
     }
 
     /**
-     * Returns the the real part of the complex number
+     * Returns the the real part of the complex number.
      *
      * @return realNumber the real part of the complex number
      */
@@ -162,7 +162,7 @@ public class ComplexNumber {
     }
 
     /**
-     * Sets the the real part of the complex number
+     * Sets the the real part of the complex number.
      *
      * @param realNumber the real part of the complex number
      */
@@ -172,7 +172,7 @@ public class ComplexNumber {
     }
 
     /**
-     * Returns the the imaginary part of the complex number
+     * Returns the the imaginary part of the complex number.
      *
      * @return imaginaryNumber the imaginary part of the complex number
      */
@@ -182,7 +182,7 @@ public class ComplexNumber {
     }
 
     /**
-     * Sets the the imaginary part of the complex number
+     * Sets the the imaginary part of the complex number.
      *
      * @param imaginaryNumber the imaginary part of the complex number
      */
@@ -192,7 +192,7 @@ public class ComplexNumber {
     }
 
     /**
-     * Complex numbers are written as a + bi
+     * Complex numbers are written as a + bi.
      *
      * @return string the standard form of the complex number
      */
@@ -207,7 +207,7 @@ public class ComplexNumber {
     }
 
     /**
-     * Adds this and complexNumber using the static method in ComplexNumber
+     * Adds this and complexNumber using the static method in ComplexNumber.
      *
      * @param complexNumber the number to add
      */
@@ -217,7 +217,7 @@ public class ComplexNumber {
     }
 
     /**
-     * Subtracts this and complexNumber using the static method in ComplexNumber
+     * Subtracts this and complexNumber using the static method in ComplexNumber.
      *
      * @param complexNumber the number to subtract
      */
@@ -227,7 +227,7 @@ public class ComplexNumber {
     }
 
     /**
-     * Multiplies this and complexNumber using the static method in ComplexNumber
+     * Multiplies this and complexNumber using the static method in ComplexNumber.
      *
      * @param complexNumber the number to multiply
      */
@@ -237,7 +237,7 @@ public class ComplexNumber {
     }
 
     /**
-     * Divides this and complexNumber using the static method in ComplexNumber
+     * Divides this and complexNumber using the static method in ComplexNumber.
      *
      * @param complexNumber the number to divide
      */
@@ -247,7 +247,7 @@ public class ComplexNumber {
     }
 
     /**
-     * Squares this using the static method in ComplexNumber
+     * Squares this using the static method in ComplexNumber.
      */
 
     public void square() {
@@ -255,7 +255,7 @@ public class ComplexNumber {
     }
 
     /**
-     * Checks if complexNumber is equal to this
+     * Checks if complexNumber is equal to this.
      *
      * @param complexNumber the number to check equality against this
      * @return boolean true if complexNumber === this

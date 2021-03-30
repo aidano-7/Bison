@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.aidano7.bison.algebra"}];updateSearchResults();
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.aidano7"},{"l":"com.aidano7.bison"},{"l":"com.aidano7.bison.algebra"},{"l":"com.aidano7.bison.algebra.equations"}];updateSearchResults();

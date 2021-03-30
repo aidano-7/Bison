@@ -2,70 +2,62 @@ package com.aidano7.bison.algebra;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.Test;
+
 class RadicalNumberTest {
 
-    @org.junit.jupiter.api.Test
+    @Test
     void getCoefficient() {
         RadicalNumber radicalNumber = new RadicalNumber(1f, 10);
         assertEquals(radicalNumber.getCoefficient(), 1f, 0f);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void getRadicand() {
         RadicalNumber radicalNumber = new RadicalNumber(1f, 10);
         assertEquals(radicalNumber.getRadicand(), 10, 0);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void testToString() {
         RadicalNumber radicalNumber = new RadicalNumber(1f, 10);
         assertEquals(radicalNumber.toString(), "1.000000√10");
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void add() {
         RadicalNumber a = new RadicalNumber(2f, 5);
         RadicalNumber b = new RadicalNumber(3f, 5);
 
-        a.add(b);
+        RadicalNumber c = RadicalNumber.add(a, b);
 
-        boolean equals = a.equals(new RadicalNumber(5f, 5));
+        assert c != null;
+        boolean equals = c.equals(new RadicalNumber(5f, 5));
 
         assertTrue(equals);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void subtract() {
         RadicalNumber a = new RadicalNumber(2f, 5);
         RadicalNumber b = new RadicalNumber(3f, 5);
 
-        a.subtract(b);
+        RadicalNumber c = RadicalNumber.subtract(a, b);
 
-        boolean equals = a.equals(new RadicalNumber(-1f, 5));
+        assert c != null;
+        boolean equals = c.equals(new RadicalNumber(-1f, 5));
 
         assertTrue(equals);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void multiply() {
         RadicalNumber a = new RadicalNumber(2f, 5);
-        RadicalNumber b = new RadicalNumber(3f, 3);
+        RadicalNumber b = new RadicalNumber(3f, 5);
 
-        a.multiply(b);
+        RadicalNumber c = RadicalNumber.multiply(a, b);
 
-        boolean equals = a.equals(new RadicalNumber(6f, 15));
-
-        assertTrue(equals);
-    }
-
-    @org.junit.jupiter.api.Test
-    void divide() {
-        RadicalNumber a = new RadicalNumber(2f, 5);
-        RadicalNumber b = new RadicalNumber(3f, 3);
-
-        a.divide(b);
-
-        boolean equals = a.equals(new RadicalNumber(2f / 9f, 15));
+        boolean equals = c.equals(new RadicalNumber(6f, 25));
 
         assertTrue(equals);
     }
