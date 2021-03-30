@@ -18,7 +18,7 @@ public class ComplexNumber {
      * The complex number for i
      */
 
-    public static ComplexNumber i = new ComplexNumber(0,1);
+    public static final ComplexNumber i = new ComplexNumber(0,1);
 
     /**
      * To add a complex number to another, simply add the real part,
