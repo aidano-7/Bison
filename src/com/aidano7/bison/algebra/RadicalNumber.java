@@ -149,36 +149,6 @@ public class RadicalNumber {
     }
 
     /**
-     * Adds this and radicalNumber using the static method.
-     *
-     * @param radicalNumber the number to add
-     */
-
-    public void add(RadicalNumber radicalNumber) {
-        RadicalNumber.add(this, radicalNumber);
-    }
-
-    /**
-     * Subtracts this and radicalNumber using the static method.
-     *
-     * @param radicalNumber the number to subtract
-     */
-
-    public void subtract(RadicalNumber radicalNumber) {
-        RadicalNumber.subtract(this, radicalNumber);
-    }
-
-    /**
-     * Multiplies this and radicalNumber using the static method.
-     *
-     * @param radicalNumber the number to multiply
-     */
-
-    public void multiply(RadicalNumber radicalNumber) {
-        RadicalNumber.multiply(this, radicalNumber);
-    }
-
-    /**
      * Checks if radicalNumber is equal to this.
      *
      * @param radicalNumber the number to check equality against this
