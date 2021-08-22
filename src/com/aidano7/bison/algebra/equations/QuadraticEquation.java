@@ -2,7 +2,6 @@ package com.aidano7.bison.algebra.equations;
 
 /**
  * @author aidano-7
- * @date 3/30/2021
  *
  * <p>
  *     Implementation of a quadratic in Bison. Standard form is
