@@ -14,6 +14,89 @@ package com.aidano7.bison.linearAlgebra;
 public class Vector3 {
 
     /**
+     * Adds the two given Vectors by adding each of their components.
+     *
+     * @param vector3A first vector to add
+     * @param vector3B second vector to add
+     * @return vector3C sum of the two input vectors
+     */
+
+    public static Vector3 add(Vector3 vector3A, Vector3 vector3B) {
+        Vector3 vector3C = new Vector3(0f, 0f, 0f);
+
+        vector3C.x = vector3A.x + vector3B.x;
+        vector3C.y = vector3A.y + vector3B.y;
+        vector3C.z = vector3A.z + vector3B.z;
+
+        return vector3C;
+    }
+
+    /**
+     * Subtracts the two given Vectors by subtracting each of their components.
+     *
+     * @param vector3A first vector to subtract
+     * @param vector3B second vector to subtract
+     * @return vector3C difference of the two input vectors
+     */
+
+    public static Vector3 subtract(Vector3 vector3A, Vector3 vector3B) {
+        Vector3 vector3C = new Vector3(0f, 0f, 0f);
+
+        vector3C.x = vector3A.x - vector3B.x;
+        vector3C.y = vector3A.y - vector3B.y;
+        vector3C.z = vector3A.z - vector3B.z;
+
+        return vector3C;
+    }
+
+    /**
+     * Multiplies the two given Vectors by multiplying each of their components.
+     *
+     * @param vector3A first vector to multiply
+     * @param vector3B second vector to multiply
+     * @return vector3C product of the two input vectors
+     */
+
+    public static Vector3 multiply(Vector3 vector3A, Vector3 vector3B) {
+        Vector3 vector3C = new Vector3(0f, 0f, 0f);
+
+        vector3C.x = vector3A.x * vector3B.x;
+        vector3C.y = vector3A.y * vector3B.y;
+        vector3C.z = vector3A.z * vector3B.z;
+
+        return vector3C;
+    }
+
+    /**
+     * Divides the two given Vectors by dividing each of their components.
+     *
+     * @param vector3A first vector to divide
+     * @param vector3B second vector to divide
+     * @return vector3C quotient of the two input vectors
+     */
+
+    public static Vector3 divide(Vector3 vector3A, Vector3 vector3B) {
+        Vector3 vector3C = new Vector3(0f, 0f, 0f);
+
+        vector3C.x = vector3A.x / vector3B.x;
+        vector3C.y = vector3A.y / vector3B.y;
+        vector3C.z = vector3A.z / vector3B.z;
+
+        return vector3C;
+    }
+
+    /**
+     * Squares the given vector by multiplying it by itself.
+     *
+     * @param vector3 vector to square
+     * @return vector3C square of vector3
+     */
+
+    public static Vector3 square(Vector3 vector3) {
+        return Vector3.multiply(vector3, vector3);
+    }
+
+    /**
      * X component of vector
      */
 
@@ -44,16 +127,6 @@ public class Vector3 {
         this.x = x;
         this.y = y;
         this.z = z;
-    }
-
-    /**
-     * Default constructor. Sets all components to 0.
-     */
-
-    public Vector3() {
-        this.x = 0.0f;
-        this.y = 0.0f;
-        this.z = 0.0f;
     }
 
     /**
@@ -114,5 +187,28 @@ public class Vector3 {
 
     public void setZ(float z) {
         this.z = z;
+    }
+
+    /**
+     * Returns the vector as a string in the convention,
+     * (x, y, z).
+     *
+     * @return vector Vector as a string
+     */
+
+    @Override
+    public String toString() {
+        return String.format("(%f, %f, %f)", x, y, z);
+    }
+
+    /**
+     * Checks if vector3 is equal to this.
+     *
+     * @param vector3 the vector to check equality against this
+     * @return boolean true if vector3 === this
+     */
+
+    public boolean equals(Vector3 vector3) {
+        return x == vector3.getX() && y == vector3.getY() && z == vector3.getZ();
     }
 }

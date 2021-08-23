@@ -34,8 +34,8 @@ public class ComplexNumber {
 
         ComplexNumber complexNumberC = new ComplexNumber(0f, 0f);
 
-        complexNumberC.realNumber = complexNumberA.getRealNumber() + complexNumberB.getRealNumber();
-        complexNumberC.imaginaryNumber = complexNumberA.getImaginaryNumber() + complexNumberB.getImaginaryNumber();
+        complexNumberC.realNumber = complexNumberA.realNumber + complexNumberB.realNumber;
+        complexNumberC.imaginaryNumber = complexNumberA.imaginaryNumber + complexNumberB.imaginaryNumber;
 
         return complexNumberC;
     }
@@ -54,8 +54,8 @@ public class ComplexNumber {
 
         ComplexNumber complexNumberC = new ComplexNumber(0f, 0f);
 
-        complexNumberC.realNumber = complexNumberA.getRealNumber() - complexNumberB.getRealNumber();
-        complexNumberC.imaginaryNumber = complexNumberA.getImaginaryNumber() - complexNumberB.getImaginaryNumber();
+        complexNumberC.realNumber = complexNumberA.realNumber - complexNumberB.realNumber;
+        complexNumberC.imaginaryNumber = complexNumberA.imaginaryNumber - complexNumberB.imaginaryNumber;
 
         return complexNumberC;
     }
@@ -74,11 +74,11 @@ public class ComplexNumber {
      */
 
     public static ComplexNumber multiply(ComplexNumber complexNumberA, ComplexNumber complexNumberB) {
-        float a = complexNumberA.getRealNumber();
-        float b = complexNumberA.getImaginaryNumber();
+        float a = complexNumberA.realNumber;
+        float b = complexNumberA.imaginaryNumber;
 
-        float c = complexNumberB.getRealNumber();
-        float d = complexNumberB.getImaginaryNumber();
+        float c = complexNumberB.realNumber;
+        float d = complexNumberB.imaginaryNumber;
 
         float realNumber = (a * c) - (b * d);
         float imaginaryNumber = (a * d) + (b * c);
@@ -100,11 +100,11 @@ public class ComplexNumber {
      */
 
     public static ComplexNumber divide(ComplexNumber complexNumberA, ComplexNumber complexNumberB) {
-        float a = complexNumberA.getRealNumber();
-        float b = complexNumberA.getImaginaryNumber();
+        float a = complexNumberA.realNumber;
+        float b = complexNumberA.imaginaryNumber;
 
-        float c = complexNumberB.getRealNumber();
-        float d = complexNumberB.getImaginaryNumber();
+        float c = complexNumberB.realNumber;
+        float d = complexNumberB.imaginaryNumber;
 
         float realNumber = (a * c) + (b * d);
         float imaginaryNumber = (b * c) - (a * d);
@@ -204,54 +204,6 @@ public class ComplexNumber {
         } else {
             return String.format("%f - %fi", realNumber, -imaginaryNumber);
         }
-    }
-
-    /**
-     * Adds this and complexNumber using the static method in ComplexNumber.
-     *
-     * @param complexNumber the number to add
-     */
-
-    public void add(ComplexNumber complexNumber) {
-        ComplexNumber.add(this, complexNumber);
-    }
-
-    /**
-     * Subtracts this and complexNumber using the static method in ComplexNumber.
-     *
-     * @param complexNumber the number to subtract
-     */
-
-    public void subtract(ComplexNumber complexNumber) {
-        ComplexNumber.subtract(this, complexNumber);
-    }
-
-    /**
-     * Multiplies this and complexNumber using the static method in ComplexNumber.
-     *
-     * @param complexNumber the number to multiply
-     */
-
-    public void multiply(ComplexNumber complexNumber) {
-        ComplexNumber.multiply(this, complexNumber);
-    }
-
-    /**
-     * Divides this and complexNumber using the static method in ComplexNumber.
-     *
-     * @param complexNumber the number to divide
-     */
-
-    public void divide(ComplexNumber complexNumber) {
-        ComplexNumber.divide(this, complexNumber);
-    }
-
-    /**
-     * Squares this using the static method in ComplexNumber.
-     */
-
-    public void square() {
-        ComplexNumber.square(this);
     }
 
     /**
